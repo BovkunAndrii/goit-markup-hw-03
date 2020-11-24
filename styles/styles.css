@@ -21,13 +21,28 @@ ul {
   margin: 0;
 }
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item {
+  margin-right: 50px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .site-nav-contacts .link {
   color: var(--primary-bg-color);
@@ -43,6 +58,11 @@ ul {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 
   
 }
@@ -62,6 +82,14 @@ ul {
 .site-nav-contacts .link:focus {
   color: var(--accent-color);
 }
+
+.site-nav-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.site-nav-contacts .item + .item {
+  margin-left: 50px;
+} 
 
 
 .hero {
@@ -184,6 +212,12 @@ ul {
 }
 
 /* PORTFOLIO PAGE */
+.filter-buttons {
+  display: flex;
+  
+}
+
+
 .filter-button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
@@ -194,7 +228,8 @@ ul {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-}
+
+  }
 .filter-button:hover,
 .filter-button:focus {
   color: var(--primary-white-color);
